@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 20vh;
+    width: 100%;
+    /* display: none; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#playbtn{
+    background: radial-gradient(darkblue, aqua);
+    width: 20em;
+    height: 3em;
+    color: azure;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border-radius: 10px;
+    outline-style: none;
+    border: 0.1em solid darkblue;
+}
+#playbtn:hover{
+    background: radial-gradient(aqua, darkblue);
+    color: darkblue;
+    border: 0.1em solid aqua;
+    cursor: pointer;
+}
+.allquestions{
+    height: 70vh;
+    width: 60%;
+    border: 0.1em solid darkblue;
+    border-radius: 50px 0px 50px 0px;
+    overflow: hidden;
+    position: absolute;
+}
+.question{
+    margin: 2em 3em;
+    background-color: darkblue;
+    display: inline-block;
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+.allquestions ul{
+    margin-top: -30px;
+
+}
+.allquestions ul li{
+    margin-left: 5.5em;
+    list-style: none;
+    line-height: 30px;
+    background-color: darkgray;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 10px;
+    color: darkblue;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.allquestions ul li:active{
+    box-shadow: 0px 7px 15px black;
+    color: red;
+}
+#next{
+    width: 90%;
+    height: 7vh;
+    bottom: 10%;
+    left: 5%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: darkred;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    outline-style: none;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+}
+.trueanswer{
+    background: green !important;
+    transition: 0.5s;
+    color: white !important;
+}
+.wronganswer{
+    background: red !important;
+    transition: 0.5s;
+    color: white !important;
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    /* background-color: darkgreen; */
+    color: darkred;
+    text-align: center;
+    width: 20%;
+    height: 5vh;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.myscore{
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    /* margin-top: 5px; */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: darkblue;">Quiz App</h2>
+        <button id="playbtn" onclick="_hide()">Play</button>
+    </div>
+    <div class="allquestions" style="display: none;">
+        <h3 class="question"></h3>
+        <ul>
+            <li id="op1" onclick="button(this)"></li>
+            <li id="op2" onclick="button(this)"></li>
+            <li id="op3" onclick="button(this)"></li>
+            <li id="op4" onclick="button(this)"></li>
+        </ul>
+        <button type="button" id="next" onclick="next()">Next</button>
+        <div class="score">Score: <span class="myscore"></span></div>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    function _hide() {
+        $('.container').hide(700)
+        $('.allquestions').show(2000)
+        $('#next').slideDown(2000)
+    }
+</script>
+<script src="script.js"></script>
+
+
+
+
+</html>
